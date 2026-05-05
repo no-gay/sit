@@ -1,0 +1,136 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Продажа Автомобилей - Купи Свою Мечту</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="Найди и купи свой идеальный автомобиль из нашего широкого ассортимента.">
+
+  <meta property="og:title" content="Продажа Автомобилей - Купи Свою Мечту">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <button id="gifs-toggle-btn" class="gifs-toggle-btn" title="Открыть/закрыть панель с гифками">▼ Гифки</button>
+  <div id="car-gifs-container">
+    <img src="Burn rubber, not your soul.gif" class="car-gif-bg" alt="Burn rubber not your soul">
+    <img src="Буддийская Живопись.gif" class="car-gif-bg" alt="Буддийская Живопись">
+    <img src="Toyota Supra Supra GIF - Toyota Supra Supra 90s Supra - Discover & Share GIFs.gif" class="car-gif-bg" alt="Toyota Supra">
+  </div>
+  <!-- Шапка сайта -->
+  <header>
+    <div class="container">
+      <h1>Продажа Авто</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Главная</a></li>
+          <li><a href="#cars">Автомобили</a></li>
+          <li><a href="#contact">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Приветственная секция -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h2>Добро пожаловать в Продажу Авто</h2>
+      <p>Откройте для себя идеальный автомобиль из нашей обширной коллекции.</p>
+    </div>
+  </section>
+
+  <!-- Секция с автомобилями -->
+  <section id="cars" class="car-listings">
+    <div class="container">
+      <h2>Доступные Автомобили</h2>
+      <div class="filter">
+        <label for="filter">Фильтр по типу:</label>
+        <select id="filter">
+          <option value="all">Все</option>
+          <option value="sedan">Седан</option>
+          <option value="suv">Внедорожник</option>
+          <option value="truck">Грузовик</option>
+        </select>
+      </div>
+      <div class="cars-grid">
+        <!-- Карточка Toyota Camry -->
+        <div class="car-card" data-type="sedan">
+          <img src="https://s.auto.drom.ru/i24253/r/photos/1421420/1542079.jpg" alt="Toyota Camry">
+          <h3>Toyota Camry</h3>
+          <p>Год: 2020</p>
+          <p>Пробег: 25,000 миль</p>
+          <p class="price">$25,000</p>
+          <a href="toyota-camry.html"><button>Подробнее</button></a>
+        </div>
+        
+        <!-- Карточка Ford Explorer -->
+        <div class="car-card" data-type="suv">
+          <img src="https://www.iihs.org/cdn-cgi/image/width=636/api/ratings/model-year-images/2779/" alt="Ford Explorer">
+          <h3>Ford Explorer</h3>
+          <p>Год: 2019</p>
+          <p>Пробег: 30,000 миль</p>
+          <p class="price">$28,000</p>
+          <a href="ford-explorer.html"><button>Подробнее</button></a>
+        </div>
+        <!-- Карточка Chevrolet Silverado -->
+        <div class="car-card" data-type="truck">
+          <img src="https://di-uploads-pod25.dealerinspire.com/rickhendrickchevynorfolk/uploads/2021/04/2021-chevy-silverado-1500.jpeg" alt="Chevrolet Silverado">
+          <h3>Chevrolet Silverado</h3>
+          <p>Год: 2021</p>
+          <p>Пробег: 15,000 миль</p>
+          <p class="price">$35,000</p>
+          <a href="chevrolet-silverado.html"><button>Подробнее</button></a>
+        </div>
+        <!-- Карточка Honda Accord -->
+        <div class="car-card" data-type="sedan">
+          <img src="https://autompv.ru/wp-content/uploads/2017/10/faryi-i-bamper-Honda-Akkord-2018.jpg" alt="Honda Accord">
+          <h3>Honda Accord</h3>
+          <p>Год: 2018</p>
+          <p>Пробег: 40,000 миль</p>
+          <p class="price">$20,000</p>
+          <a href="honda-accord.html"><button>Подробнее</button></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Форма контактов -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Свяжитесь с Нами</h2>
+      <form>
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Сообщение:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Отправить</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Подвал -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Продажа Авто. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
