@@ -4,11 +4,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Продажа Автомобилей - Купи Свою Мечту</title>
+  <title>AutoElite - Купи Свою Мечту</title>
   <link rel="stylesheet" href="css/style.css">
   <meta name="description" content="Найди и купи свой идеальный автомобиль из нашего широкого ассортимента.">
 
-  <meta property="og:title" content="Продажа Автомобилей - Купи Свою Мечту">
+  <meta property="og:title" content="AutoElite - Купи Свою Мечту">
   <meta property="og:type" content="website">
   <meta property="og:url" content="">
   <meta property="og:image" content="">
@@ -32,12 +32,12 @@
   <!-- Шапка сайта -->
   <header>
     <div class="container">
-      <h1>Продажа Авто</h1>
+      <h1><img src="icon.svg" alt="AutoElite Logo" class="logo">AutoElite</h1>
       <nav>
         <ul>
           <li><a href="#home">Главная</a></li>
           <li><a href="#cars">Автомобили</a></li>
-          <li><a href="#contact">Контакты</a></li>
+          <li><a href="contact.html">Контакты</a></li>
         </ul>
       </nav>
     </div>
@@ -46,7 +46,7 @@
   <!-- Приветственная секция -->
   <section id="home" class="hero">
     <div class="container">
-      <h2>Добро пожаловать в Продажу Авто</h2>
+      <h2>Добро пожаловать в AutoElite</h2>
       <p>Откройте для себя идеальный автомобиль из нашей обширной коллекции.</p>
     </div>
   </section>
@@ -62,19 +62,21 @@
           <option value="sedan">Седан</option>
           <option value="suv">Внедорожник</option>
           <option value="truck">Грузовик</option>
+          <option value="coupe">Купе</option>
+          <option value="wagon">Универсал</option>
         </select>
       </div>
       <div class="cars-grid">
         <!-- Карточка Toyota Camry -->
         <div class="car-card" data-type="sedan">
-          <img src="https://s.auto.drom.ru/i24253/r/photos/1421420/1542079.jpg" alt="Toyota Camry">
+          <img src="img/toyota-camry.webp" alt="Toyota Camry">
           <h3>Toyota Camry</h3>
           <p>Год: 2020</p>
           <p>Пробег: 25,000 миль</p>
           <p class="price">$25,000</p>
           <a href="toyota-camry.html"><button>Подробнее</button></a>
         </div>
-        
+
         <!-- Карточка Ford Explorer -->
         <div class="car-card" data-type="suv">
           <img src="https://www.iihs.org/cdn-cgi/image/width=636/api/ratings/model-year-images/2779/" alt="Ford Explorer">
@@ -102,30 +104,114 @@
           <p class="price">$20,000</p>
           <a href="honda-accord.html"><button>Подробнее</button></a>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Форма контактов -->
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2>Свяжитесь с Нами</h2>
-      <form>
-        <label for="name">Имя:</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="message">Сообщение:</label>
-        <textarea id="message" name="message" required></textarea>
-        <button type="submit">Отправить</button>
-      </form>
+        <!-- Карточка BMW M3 -->
+        <div class="car-card" data-type="sedan">
+          <img src="https://avatars.mds.yandex.net/get-verba/1547161/2a0000017834511d7f19159981881775739b/optimize" alt="BMW M3">
+          <h3>BMW M3</h3>
+          <p>Год: 2021</p>
+          <p>Пробег: 5,000 миль</p>
+          <p class="price">$85,000</p>
+          <a href="bmw-m3.html"><button>Подробнее</button></a>
+        </div>
+
+        <!-- Карточка Tesla Model S -->
+        <div class="car-card" data-type="sedan">
+          <img src="img/tesla-model-s.jpg" alt="Tesla Model S">
+          <h3>Tesla Model S Plaid</h3>
+          <p>Год: 2022</p>
+          <p>Пробег: 2,000 миль</p>
+          <p class="price">$110,000</p>
+          <a href="tesla-model-s.html"><button>Подробнее</button></a>
+        </div>
+
+        <!-- Карточка Porsche 911 -->
+        <div class="car-card" data-type="coupe">
+          <img src="img/porsche-911.webp" alt="Porsche 911">
+          <h3>Porsche 911 Carrera S</h3>
+          <p>Год: 2021</p>
+          <p>Пробег: 3,500 миль</p>
+          <p class="price">$145,000</p>
+          <a href="porsche-911.html"><button>Подробнее</button></a>
+        </div>
+
+        <!-- Карточка Mercedes-Benz G-Class -->
+        <div class="car-card" data-type="suv">
+          <img src="https://avatars.mds.yandex.net/get-verba/1547161/2a00000161474130325d79667f3942008064/optimize" alt="Mercedes-Benz G-Class">
+          <h3>Mercedes-Benz G 63 AMG</h3>
+          <p>Год: 2022</p>
+          <p>Пробег: 1,200 миль</p>
+          <p class="price">$250,000</p>
+          <a href="mercedes-g63.html"><button>Подробнее</button></a>
+        </div>
+
+        <!-- Карточка Audi RS6 -->
+        <div class="car-card" data-type="wagon">
+          <img src="https://avatars.mds.yandex.net/get-verba/1030388/2a00000185933d14878a1061994e4d8e855c/optimize" alt="Audi RS6">
+          <h3>Audi RS6 Avant</h3>
+          <p>Год: 2021</p>
+          <p>Пробег: 10,000 миль</p>
+          <p class="price">$125,000</p>
+          <a href="audi-rs6.html"><button>Подробнее</button></a>
+        </div>
+
+        <!-- Карточка Land Rover Defender -->
+        <div class="car-card" data-type="suv">
+          <img src="https://avatars.mds.yandex.net/get-verba/1547161/2a00000174e92b3a1290680376d8b0244439/optimize" alt="Land Rover Defender">
+          <h3>Land Rover Defender 110</h3>
+          <p>Год: 2021</p>
+          <p>Пробег: 8,000 миль</p>
+          <p class="price">$80,000</p>
+          <a href="land-rover-defender.html"><button>Подробнее</button></a>
+        </div>
+
+        <!-- Карточка Lexus RX -->
+        <div class="car-card" data-type="suv">
+          <img src="https://avatars.mds.yandex.net/get-verba/1030388/2a000001815041a7d1880a96939985223e74/optimize" alt="Lexus RX">
+          <h3>Lexus RX 350</h3>
+          <p>Год: 2021</p>
+          <p>Пробег: 12,000 миль</p>
+          <p class="price">$52,000</p>
+          <a href="lexus-rx.html"><button>Подробнее</button></a>
+        </div>
+
+        <!-- Карточка Subaru WRX STI -->
+        <div class="car-card" data-type="sedan">
+          <img src="https://avatars.mds.yandex.net/get-verba/1030388/2a00000171a8120e3605e54619992383c267/optimize" alt="Subaru WRX STI">
+          <h3>Subaru WRX STI</h3>
+          <p>Год: 2020</p>
+          <p>Пробег: 18,000 миль</p>
+          <p class="price">$38,000</p>
+          <a href="subaru-wrx.html"><button>Подробнее</button></a>
+        </div>
+
+        <!-- Карточка Toyota Supra -->
+        <div class="car-card" data-type="coupe">
+          <img src="https://avatars.mds.yandex.net/get-verba/1547161/2a00000185933d156557876a91178a9c849c/optimize" alt="Toyota Supra">
+          <h3>Toyota GR Supra</h3>
+          <p>Год: 2021</p>
+          <p>Пробег: 4,000 миль</p>
+          <p class="price">$55,000</p>
+          <a href="toyota-supra.html"><button>Подробнее</button></a>
+        </div>
+
+        <!-- Карточка Jeep Wrangler -->
+        <div class="car-card" data-type="suv">
+          <img src="https://avatars.mds.yandex.net/get-verba/1547161/2a00000175b2257d079667793d567f818070/optimize" alt="Jeep Wrangler">
+          <h3>Jeep Wrangler Rubicon</h3>
+          <p>Год: 2021</p>
+          <p>Пробег: 7,500 миль</p>
+          <p class="price">$45,000</p>
+          <a href="jeep-wrangler.html"><button>Подробнее</button></a>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Подвал -->
   <footer>
     <div class="container">
-      <p>&copy; 2023 Продажа Авто. Все права защищены.</p>
+      <p>&copy; 2026 AutoElite. Все права защищены.</p>
     </div>
   </footer>
 
